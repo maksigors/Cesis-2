@@ -290,15 +290,15 @@
 					<input type="text" name="phone" placeholder="Phone">
 					<input type="text" name="company" placeholder="Company">
 					
-					<div class="dropdown-box">
-					<input type="text" id="dropdown" placeholder="What are you looking for?">
-					<ul class="dropdown">
-						<li><a href="#">House ?</a></li>
-						<li><a href="#">Car ?</a></li>
-						<li><a href="#">Job ?</a></li>
-						<li><a href="#">Wife ?</a></li>
-					</ul>
-					</div>
+<div class="dropdown-box">
+<input type="text" id="dropdown" placeholder="What are you looking for?">
+<ul class="dropdown-menu">
+	<li><a href="#">House ?</a></li>
+	<li><a href="#">Car ?</a></li>
+	<li><a href="#">Job ?</a></li>
+	<li><a href="#">Wife ?</a></li>
+</ul>
+</div>
 	
 
 					<div class="check">
@@ -418,6 +418,13 @@
 			box3.css("border","1px solid transparent"); 
 		})
 
+
+		var dropdown = $('#dropdown')
+		var dr_menu = $('.dropdown-menu')
+
+		dropdown.click(function(){
+			dr_menu.toggleClass("show")
+		})
 
 	})
 
