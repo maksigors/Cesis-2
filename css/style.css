@@ -1132,7 +1132,7 @@ h1
     color: #fff;
     text-shadow: 0 0 2px grey;
 }
-.social table
+.social ul
 {
     width: 100%;
     height: 100%;
@@ -1141,7 +1141,7 @@ h1
 
     border: none;
 }
-.social td
+.social li
 {
     position: relative;
 
@@ -1151,7 +1151,7 @@ h1
 
     border-left: 1px solid #ccc;
 }
-.social td:first-child
+.social li:first-child
 {
     width: 10%;
 
@@ -1159,7 +1159,7 @@ h1
 
     border-left: none;
 }
-.social td:last-child
+.social li:last-child
 {
     width: 10%;
 
@@ -1213,14 +1213,13 @@ h1
 {
     content: 'Follow us on WorldPress';
 }
-.social td:first-child a::after
-{
-    left: 0;
-}
+
 .social a:hover::after
 {
     opacity: 1;
 }
+
+
 
 .footer
 {
