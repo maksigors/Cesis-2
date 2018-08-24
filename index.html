@@ -283,7 +283,7 @@
 				</p>
 			</div>
 			<div class="top_form">
-				<form >
+				<form id="main-form">
 					<input type="text" name="name" placeholder="Your name">
 
 					<input type="text" name="email" placeholder="Email">
@@ -291,13 +291,13 @@
 					<input type="text" name="company" placeholder="Company">
 					
 					<div class="dropdown-box">
-					<input type="text" id="dropdown" placeholder="What are you looking for?">
-					<ul class="dropdown-menu">
-						<li><a href="#">House ?</a></li>
-						<li><a href="#">Car ?</a></li>
-						<li><a href="#">Job ?</a></li>
-						<li><a href="#">Wife ?</a></li>
-					</ul>
+						<input type="text" id="dropdown" placeholder="What are you looking for?">
+						<ul class="dropdown-menu">
+							<li><a href="#">House ?</a></li>
+							<li><a href="#">Car ?</a></li>
+							<li><a href="#">Job ?</a></li>
+							<li><a href="#">Wife ?</a></li>
+						</ul>
 					</div>
 	
 
@@ -443,9 +443,14 @@
 		var dropdown = $('#dropdown')
 		var dr_menu = $('.dropdown-menu')
 
+
 		dropdown.click(function(){
 			dr_menu.toggleClass("show")
 		})
+		dr_menu.click(function(){
+			dr_menu.removeClass("show")
+		})
+
 
 	})
 
