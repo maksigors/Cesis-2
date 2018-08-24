@@ -984,11 +984,11 @@ h1
     
 }
 .dropdown-menu.show {
-     opacity: 1;
+     display: block;
 
 }
 .dropdown-menu {
-    opacity: 0;
+    display: none;
     transition: all  .9;
     position: absolute;
     top: 65px;
