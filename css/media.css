@@ -207,17 +207,17 @@
     }
     .contact .top_tran h3
     {
-        font-size: 60px;
+		font-size: 60px;
     }
     .contact .top_form
     {
-        min-width: 50%;
+		min-width: 50%;
     }
 
     .social .social-box a::after
     {
-        top: 150px;
-        left: 5px;
+      /* top: 150px; */
+      /* left: 5px; */
     }
 }
 
